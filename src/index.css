@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.grid-container {
+  --row-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: 10px;
+  /* padding: var(--gap); */
+  width: 100%;
+}
+/*anything under 1024 px*/
+@media screen and (max-width: 1024px){
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    --row-height: 300px;
+    width: 100%;
+  }
+  .image-grid-col-3 {
+    grid-column: span 2;
+  }  
+}
+
+
+.task-card {
+  width: calc(90% - 20px);
+  margin: 15px auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.task-status button {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 3px #777;
+  font-family: inherit;
+  font-size: 1em;
+  background-color: rgba(240, 240, 240, 0.2);
+  color: #333;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.task-status button:hover{
+  cursor: pointer;
+  background-color: rgba(220, 220, 220, 0.5);
+}
+.task-name-description {
+  flex-grow: 6;
+}
+
+.task-name {
+  font-size:1.2em;
+  font-weight:200;
+}
+
+.task-description {
+  font-size: .8em;
+}
+
+.task-author {
+  flex-grow: 1;
+  font-size: .8em;
+}
+
+.task-priority {
+  flex-grow: 1;
+  font-size: .8em;
+}
+
+.task-dueDate {
+  flex-grow: 1;
+  font-size: .8em;
+}
+.complete{
+  background-color: #00CCBF;
+  color: #666
+}
+
+.tasks-container{
+  padding: 15px;
+}
+/*  */
+.NavLink{
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #000000;
+  display: block;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slider__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ////////////////// */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input {
+  margin-top: 5px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}

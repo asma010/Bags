@@ -1,0 +1,26 @@
+
+.product-details {
+  display: list-item;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart-button {
+  margin-top: 1rem;
+}
