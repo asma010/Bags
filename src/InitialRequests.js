@@ -4,7 +4,6 @@ import { collection, getDocs } from "firebase/firestore";
 import { getStorage, ref, listAll } from "firebase/storage";
 import { dataAtom } from "./recoil/Atoms";
 import { useSetRecoilState } from "recoil";
-// import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 export default function InitialRequests() {
   const setData = useSetRecoilState(dataAtom);
@@ -14,12 +13,11 @@ export default function InitialRequests() {
       const collectionRef = collection(db, "data");
       const snapshot = await getDocs(collectionRef);
       const tempArray = [];
-      for (const d of snapshot.docs) {//snapshot.forEach((d) => {
-        const tempArr=await getAllPhotos(d.data().folder);
-        // console.log(d.data().name);
-        tempArray.push({ ...d.data(), id: d.id ,url:tempArr});
+      for (const d of snapshot.docs) {
+        const tempArr = await getAllPhotos(d.data().folder);
+        tempArray.push({ ...d.data(), id: d.id, url: tempArr });
       }
-      // console.log(tempArray);
+      console.log(tempArray);
       setData(tempArray);
     };
     setData(null);

@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "taskmanager-db",
+    "glamorous-carry": "taskmanager-db"
+  },
+  "targets": {},
+  "etags": {}
+}

@@ -21,6 +21,8 @@ function useAddToCartHandler() {
           url: item.url,
         },
       ]);
+    }else{
+      alert('Please note that each item can only be added to your cart once.');
     }
   };
 

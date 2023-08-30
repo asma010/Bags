@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import Slider from "./Slider";
 import useAddToCartHandler from "./AddToCartHandler";
 import "./Product.css";
+import Announcement from "./Announcement";
 
 function Product() {
   const addToCart = useAddToCartHandler();
@@ -22,6 +23,7 @@ function Product() {
 
   return (
     <>
+     <Announcement />
       <NavBar />
       <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={12} md={6}>

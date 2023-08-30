@@ -13,7 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "email-js": "^2.0.2",
     "emailjs-com": "^3.2.0",
-    "firebase": "^9.6.7",
+    "firebase": "^9.22.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-draggable": "^4.4.5",

@@ -28,7 +28,7 @@ const Center = styled.div`
 `;
 const Logo = styled.h1`
   font-weight: bold;
-  font-size: 4.5mm;
+  font-size: 6mm;
 `;
 const Right = styled.div`
   flex: 1;
@@ -56,12 +56,12 @@ export default function NavBar() {
           </SearchContainer> */}
         </Left>
         <Center>
-          <Logo>Bags</Logo>
+          <Logo>GlamorousCarry</Logo>
         </Center>
         <Right>
           <MenuItem>
             <Link to="/" className="NavLink">
-              Home
+              <b>Home</b>
             </Link>
           </MenuItem>
           <MenuItem>

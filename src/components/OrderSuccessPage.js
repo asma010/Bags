@@ -8,6 +8,7 @@ function OrderSuccessPage() {
   const totalPrice = location.state?.totalPrice;
   return (
     <div className="order-success-page">
+      <img  src="../../logo.jpg"/>
       <h1>Thank you for your order!</h1>
       <p>Your order has been received and is being processed.</p>
       <ul>
@@ -16,10 +17,10 @@ function OrderSuccessPage() {
         <li>Total Amount: {totalPrice}$</li>
       </ul>
       <p>
-        You will receive an email confirmation shortly with further details.
-        Thank you for choosing Bags!
+        You will receive an email confirmation shortly with further details.<br/>
+        Thank you for choosing GlamorousCarry!
       </p>
-      <button className="return-home-button" onClick={() => navigate("/",{ state: { refreshPage: true } })}>
+      <button className= "return-home-button" onClick={() => navigate("/",{ state: { refreshPage: true } })}>
         Continue Shopping
       </button>
     </div>
